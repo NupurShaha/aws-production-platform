@@ -1,0 +1,6 @@
+aws_region             = "us-east-1"
+project_name           = "platform"
+account_id             = "YOUR_ACCOUNT_ID"
+eks_cluster_name       = "platform-cluster"
+eks_node_instance_type = "t3.small"
+rds_instance_class     = "db.t3.micro"
