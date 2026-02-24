@@ -38,3 +38,10 @@ module "secrets" {
   source       = "./modules/secrets"
   project_name = var.project_name
 }
+
+# ── ECR REPOSITORIES ──────────────────────────────────────────────────────────
+module "ecr" {
+  source       = "./modules/ecr"
+  project_name = var.project_name
+  aws_region   = var.aws_region
+}
