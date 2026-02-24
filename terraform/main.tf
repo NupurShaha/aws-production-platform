@@ -32,3 +32,9 @@ module "security" {
   # eks_oidc_provider is PLACEHOLDER until EKS cluster is created in Phase 4
   # After Phase 4: terraform apply updates trust policies with real OIDC URL
 }
+
+# ── SECRETS & CLOUDTRAIL ──────────────────────────────────────────────────────
+module "secrets" {
+  source       = "./modules/secrets"
+  project_name = var.project_name
+}
